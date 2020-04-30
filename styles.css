@@ -1,69 +1,72 @@
-body
-{
-    height:100vh;
-    max-width: 800px;
-    margin: 0 auto;
-    background-color: #505050;
+.map, .photo {
+  max-width: 100%;
+  object-fit: cover;
 }
 
-.topbar
-{
-    position: fixed;
-    height: 63px;
-    background-color: black;
-    width: 800px;
+.custom-toggler.navbar-toggler {
+  border-color: white;
 }
 
-.logo
-{
-    float: left;
-    padding: 0px 10px;
-    line-height: 50px;
+.btn-dark {
+  background-color: black;
 }
 
-.nav
-{
-    float: right;
-    padding-top: 20px;
+.navbar-nav .nav-link {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
 }
 
-.nav a
-{
-    font-size: 17px;
-    font-weight: bold;
-    text-align: center;
-    padding-right: 10px;
-    padding-left: 10px;
-    color: white;
-    font-family: Georgia;
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
-.nav a:hover
-{
-  background: #808080;
+.container {
+  margin: auto;
+  background-color: #CACCCE;
+  padding-bottom: 10px;
+  margin-bottom: 0;
+  min-height: calc(100vh - 86px);
 }
 
-
-.float-image
-{
-
-    padding: 10px;
+div h1 {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+div h2 {
+  font-size: 25px;
+  font-weight: bold;
+}
+div h3 {
+  font-size: 23px;
+  font-weight: bold;
+}
+div h4 {
+  font-size: 20px;
+  font-weight: bold;
+}
+div p {
+  font-size: 18px;
 }
 
-.content
-{
-    transition: 1s all ease-out;
-    height:100vh;
-    text-align: center;
-    padding: 65px 10px;
-    background-color: lightgrey;
-    font-size: 17px;
-    font-family: Georgia;
+#cv_button {
+  text-align: center;
 }
 
-footer {
-    position: absolute;
-    text-align: left;
-    bottom: 0;
-    font-size: small;
+.col-sm {
+  text-align: center;
+  padding: 10px;
 }
+
+.my_table {
+  min-width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+  table.my_table {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

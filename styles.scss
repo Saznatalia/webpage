@@ -1,0 +1,89 @@
+$color1: black;
+$color2: white;
+
+%shared {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.custom-toggler.navbar-toggler { 
+    border-color: $color2; 
+} 
+
+.btn-dark {
+    background-color: $color1;
+}
+
+.navbar-nav .nav-link {
+    color: $color2;
+    font-size: 20px;
+    font-weight: bold;
+}
+    
+.custom-toggler .navbar-toggler-icon { 
+    background-image: url( 
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); 
+} 
+
+.container {
+    margin: auto;
+    background-color: #CACCCE;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+    min-height: calc(100vh - 86px);
+}
+
+.photo {
+    @extend %shared;
+}
+
+div {
+
+    h1 {
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    h3 {
+        font-size: 23px;
+        font-weight: bold;
+    }
+
+    h4 {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    p {
+        font-size: 18px;
+    }
+}
+
+#cv_button {
+    text-align: center;
+}
+
+.col-sm {
+    text-align: center;
+    padding: 10px;
+}
+
+.my_table {
+    min-width: 100%;
+}
+
+.map {
+    @extend %shared;
+}
+
+@media screen and (max-width: 500px) {
+    table.my_table {
+      display: none;
+    }
+  }
